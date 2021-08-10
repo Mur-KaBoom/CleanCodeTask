@@ -24,8 +24,8 @@ const ClassificationLevel = require('./models/ClassificationLevel');
         new MilitaryPlane('F-15', 1500, 12000, 10000, MilitaryType.fighter),
         new MilitaryPlane('F-22', 1550, 13000, 11000, MilitaryType.fighter),
         new MilitaryPlane('C-130 Hercules', 650, 5000, 110000, MilitaryType.transport),
-        new ExperimentalPlane("Bell X-14", 277, 482, 500, ExperimentalTypes.HIGH_ALTITUDE, ClassificationLevel.secret),
-        new ExperimentalPlane("Ryan X-13 Vertijet", 560, 307, 500, ExperimentalTypes.VTOL, ClassificationLevel.topSecret)
+        new ExperimentalPlane("Bell X-14", 277, 482, 500, ExperimentalTypes.highAltitude, ClassificationLevel.secret),
+        new ExperimentalPlane("Ryan X-13 Vertijet", 560, 307, 500, ExperimentalTypes.verticalTakeOffAndLanding, ClassificationLevel.topSecret)
     ];
 
     let airport = new Airport(planes);

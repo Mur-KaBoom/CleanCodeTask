@@ -20,48 +20,48 @@ class ExperimentalPlane   extends Plane
         return this.model;
     }
 
-    set model(value) {
-        this.model = value;
+    set model(experimentalPlaneModel) {
+        this.model = experimentalPlaneModel;
     }
 
     get maxSpeed() {
         return this.maxSpeed;
     }
 
-    set maxSpeed(value) {
-        this.maxSpeed = value;
+    set maxSpeed(experimentalPlaneMaxSpeed) {
+        this.maxSpeed = experimentalPlaneMaxSpeed;
     }
 
     get maxFlightDistance() {
         return this.maxFlightDistance;
     }
 
-    set maxFlightDistance(value) {
-        this.maxFlightDistance = value;
+    set maxFlightDistance(experimentalPlaneMaxFlightDistance) {
+        this.maxFlightDistance = experimentalPlaneMaxFlightDistance;
     }
 
     get maxLoadCapacity() {
         return this.maxLoadCapacity;
     }
 
-    set maxLoadCapacity(value) {
-        this.maxLoadCapacity = value;
+    set maxLoadCapacity(experimentalPlaneMaxLoadCapacity) {
+        this.maxLoadCapacity = experimentalPlaneMaxLoadCapacity;
     }
 
     get type() {
         return this.type;
     }
 
-    set type(value) {
-        this.type = value;
+    set type(experimentalPlaneType) {
+        this.type = experimentalPlaneType;
     }
 
     get classificationLevel() {
         return this.classificationLevel;
     }
 
-    set classificationLevel(value) {
-        this.classificationLevel = value;
+    set classificationLevel(experimentalPlaneClassificationLevel) {
+        this.classificationLevel = experimentalPlaneClassificationLevel;
     }
 }
 

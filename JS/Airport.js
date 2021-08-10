@@ -2,7 +2,7 @@ const PassengerPlane = require('./Planes/PassengerPlane');
 const MilitaryPlane = require('./Planes/MilitaryPlane');
 const MilitaryType = require('./models/MilitaryType');
 const ExperimentalPlane = require('./Planes/ExperimentalPlane');
-const { TYPE_TRANSPORT, TYPE_BOMBER, transport, bomber } = require('./models/MilitaryType');
+const { transport, bomber } = require('./models/MilitaryType');
 
 class Airport {
 
@@ -40,10 +40,6 @@ class Airport {
 
 
 
-
-
-
-
     getTransportMilitaryPlanes(){
         return this.getMilitaryPlanesOfAppropriateType(transport);
     }
@@ -65,8 +61,6 @@ class Airport {
     }
 
     
-    // Sorts by max speed
-    // @return Airport
     sortByMaxSpeed() {
         this.planes.sort((a, b) => (a.getMaxSpeed() > b.getMaxSpeed()) ? 1 : -1);
         return this;
@@ -79,8 +73,6 @@ class Airport {
     getPlanes() {
         return this.planes;
     }
-
-
 
 
     static print(planes) {
